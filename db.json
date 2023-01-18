@@ -1,0 +1,109 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "user",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "username": "admin",
+      "password": "123"
+    },
+    {
+      "id": 3,
+      "username": "Dmitry",
+      "password": "123"
+    },
+    {
+      "id": 4,
+      "username": "Test",
+      "password": "123"
+    },
+    {
+      "username": "New",
+      "password": "123",
+      "id": 5
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "url": "http://localhost:3001"
+    },
+    {
+      "id": 2,
+      "title": "json-server",
+      "url": "http://localhost:3002"
+    },
+    {
+      "id": 3,
+      "title": "json-server",
+      "url": "http://localhost:3003"
+    },
+    {
+      "id": 4,
+      "title": "json-server",
+      "url": "http://localhost:3004"
+    },
+    {
+      "id": 5,
+      "title": "json-server",
+      "url": "http://localhost:3005"
+    }
+  ],
+  "trainings": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "url": "http://localhost:3001"
+    },
+    {
+      "id": 2,
+      "title": "json-server",
+      "url": "http://localhost:3001"
+    },
+    {
+      "id": 3,
+      "title": "json-server",
+      "url": "http://localhost:3001"
+    },
+    {
+      "id": 4,
+      "title": "json-server",
+      "url": "http://localhost:3001"
+    },
+    {
+      "id": 5,
+      "title": "json-server",
+      "url": "http://localhost:3001"
+    }
+  ],
+  "playlist": [
+    {
+      "id": 1,
+      "title": "playlist 1",
+      "url": "http://localhost:3001",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "playlist 2",
+      "url": "http://localhost:3001",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "title": "playlist 1 user 2",
+      "url": "http://localhost:3001",
+      "userId": 2
+    },
+    {
+      "id": 4,
+      "title": "playlist 4 user 3",
+      "url": "http://localhost:3001",
+      "userId": 3
+    }
+  ]
+}

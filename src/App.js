@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useAddUserMutation, useGetUsersQuery } from "./redux/userApi";
 
 function App() {
+  const { data = [], isLoading } = useGetUsersQuery();
+  const [addUser, { isError }] = useAddUserMutation();
+
+  const handlerAdduser = async () => {
+    await addUser({ username: "New", password: "123" }).unwrap();
+  };
+
+  if (isLoading) return <h1>LOADING ...</h1>;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={handlerAdduser}></button>
+      {data && data.map((item) => <div key={item.id}> {item.username} </div>)}
     </div>
   );
 }
